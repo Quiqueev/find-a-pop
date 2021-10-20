@@ -8,7 +8,7 @@ import useState from "react-usestateref";
 
 const App = () => {
   // Used to manage input and add it to the url
-  const [urlExtension, setUrlExtension] = useState("");
+  const [urlExtension, setUrlExtension] = useState(" ");
 
   // Used to hide and show banners on click
   const [showBanner, setShowBanner] = useState(false);
@@ -28,7 +28,7 @@ const App = () => {
     const response = null;
     const data = null;
 
-    if (urlExtension !== "") {
+    if (urlExtension !== "" || urlExtension !== " ") {
       async function fetchData(response, data) {
         // console.log("Fetching...");
         // console.log(urlExtension);
