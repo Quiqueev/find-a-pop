@@ -39,6 +39,7 @@ const App = () => {
         setLoading(true);
 
         response = await fetch(urlExtension);
+        console.log(response); // Check
         data = await response.json();
 
         const ht = data.Results[0];
