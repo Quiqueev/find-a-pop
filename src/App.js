@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./Components/Header";
 import SearchField from "./Components/SearchField";
 import Banner from "./Components/Banner";
-
 import { useEffect } from "react";
 import useState from "react-usestateref";
 
@@ -28,7 +27,11 @@ const App = () => {
     const response = null;
     const data = null;
 
-    if (urlExtension !== "" || urlExtension !== " ") {
+    function isBlank(str) {
+      return !str || /^\s*$/.test(str);
+    }
+
+    if (urlExtension != "" && !isBlank(urlExtension)) {
       async function fetchData(response, data) {
         // console.log("Fetching...");
         // console.log(urlExtension);
