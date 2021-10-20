@@ -8,7 +8,7 @@ import useState from "react-usestateref";
 
 const App = () => {
   // Used to manage input and add it to the url
-  const [urlExtension, setUrlExtension] = useState(" ");
+  const [urlExtension, setUrlExtension] = useState("");
 
   // Used to hide and show banners on click
   const [showBanner, setShowBanner] = useState(false);
