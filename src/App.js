@@ -30,7 +30,7 @@ const App = () => {
     function isBlank(str) {
       return !str || /^\s*$/.test(str);
     }
-
+    console.log(urlExtension);
     if (urlExtension != "" && !isBlank(urlExtension)) {
       async function fetchData(response, data) {
         // console.log("Fetching...");
