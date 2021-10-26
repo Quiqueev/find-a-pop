@@ -38,9 +38,9 @@ const App = () => {
         setShowBanner(false);
         setLoading(true);
 
-        response = await fetch(
-          "https://find-a-pop-api.herokuapp.com/" + urlExtension
-        );
+        fetchURL = "https://find-a-pop-api.herokuapp.com/" + urlExtension;
+
+        response = await fetch(fetchURL, { mode: "no-cors" });
 
         console.log(response); // Check
 
