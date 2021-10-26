@@ -38,7 +38,9 @@ const App = () => {
         setShowBanner(false);
         setLoading(true);
 
-        response = await fetch(urlExtension);
+        response = await fetch(
+          "https://find-a-pop-api.herokuapp.com/" + urlExtension
+        );
 
         console.log(response); // Check
 
