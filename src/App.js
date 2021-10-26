@@ -40,7 +40,7 @@ const App = () => {
 
         var fetchURL = "https://find-a-pop-api.herokuapp.com/" + urlExtension;
 
-        response = await fetch(fetchURL, { mode: "no-cors" });
+        response = await fetch(fetchURL);
 
         console.log(response); // Check
 
